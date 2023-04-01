@@ -1,0 +1,151 @@
+<html>
+        <body><!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                background-color:#fc9a38;
+                color:#0c18f5;
+            }
+           input[type=text],input[type=email],input[type=date],input[type=number]{
+                background-color:#fc9a38;
+                color:#0c18f5;
+                width:90%;
+                border-radius:2px;
+                border:2px #0c18f5 inset;
+            }
+            .ui{
+                background-color:#fc9a38;
+                color:#0c18f5;
+            }
+            input[type=submit]{
+                background-color:#fc9a38;
+                color:#0c18f5;
+                width:18%;
+                //padding:22px 22px 22px 22px;
+                font-size:14px;
+                font-weight:bold;
+            }
+            input[type=reset]{
+                background-color:#fc9a38;
+                color:#0c18f5;
+            }
+           
+        </style>
+    </head>
+    <body>
+        <form action=".com" method="POST" target="_blank" onsubmit="form()">
+            <fieldset>
+                <legend><h1>Registration For Mystery</h1></legend>
+       
+      <br>
+        <label>
+            First Name:
+            <br>
+        </label>
+        <input type="text" id="fname" placeholder="Enter First Name">
+        <br><br>
+        <label>
+            Last Name:
+            <br>
+        </label>
+        <input type="text" id="lname" placeholder="Enter Last Name">
+        <br><br>
+        <label>
+            E-mail:
+            <br>
+        </label>
+        <input type="email" id="gmail" placeholder="Enter E-mail">
+        <br><br>
+         Contact Number:
+        </label>
+        <input type="number" id="number" placeholder="Enter Contact Number">
+        <br><br>
+        <label>
+            Date of Birth:
+        </label>
+        <input type="date" id="DOB">
+        <br><br>
+        <label>
+            Gender:
+        </label>
+        <input type="radio" value="male" name="gender">Male
+        <input type="radio" value="female" name="gender">Female
+        <br><br>
+        <label>
+            Country:
+           <div class="custom-select" style="width:200px;">
+               <select>
+                <option>India</option>
+                <option>Maldieves</option>
+                <option>China</option>
+                <option>Srilanka</option>
+                <option>Pakistan</option>
+                <option>Afghanistan</option>
+            </select> </div>
+        </label>
+        <br><br>
+        <label>
+           <b> Size of Mystery</b>
+            <br><br>
+            <input type="checkbox" value="small">Small
+            <br>
+            <input type="checkbox" value="medium">Medium
+            <br>
+            <input type="checkbox" value="large">Large
+            <br>
+            <input type="checkbox" value="Extra large">Extra Large
+            <br><br>
+        </label>
+        
+        
+        
+        <label>
+            <b>Write the Number between 1 - 10</b>
+            <br>
+            <input type="text" id="test">
+        </label>
+        <br><br>
+        <label>
+            <input type="submit" value="Submit">
+            
+        </label>
+        <br><br>
+        <label>
+            <input type="reset" value="Reset">
+            
+        </label>
+        <br><br>
+            </fieldset>
+
+        </form>
+        <script>
+            function form1(){
+               var num1 = document.getElementById("test").value  
+               
+               if(num1>0 && num1<=10){
+                   alert("Input is Correct")
+               }
+               
+               else{
+                   alert("Input is Incorrect")
+               }
+               
+            }
+            function form(){
+                var num1 = document.getElementById("test").value
+                console.log(typeof num1)
+                if(typeof num1=="string"){
+                    alert("It is a string")
+                }
+                else{
+                    ("it is not a string")
+                }
+            }
+        </script>
+        
+    </body>
+</html></body>
+        <style></style>
+        <script></script>
+      </html>
